@@ -7,7 +7,7 @@ const button = document.querySelectorAll('.btn');
 links.forEach(link => {
     link.addEventListener('mouseover', () => {
         console.log('I am hovering');
-        link.setAttribute("style", "color: gold; background-color: whitesmoke; padding: 2px; margin: 3px;");
+        link.setAttribute("style", "color: gold; background-color: purple; padding: 2px; margin: 3px;");
     });
     link.addEventListener('mouseleave', () => {
         console.log('I have left');
@@ -20,3 +20,9 @@ body.addEventListener('keydown', () =>{
     introH.textContent = "STOP PUSHING KEYS!"
 });
 
+body.addEventListener('wheel', (event) => {
+    console.log('On and on, the wheel turns...');
+    button.forEach(buttn =>{
+        buttn.style.backgroundColor = 'purple';
+    })
+})
