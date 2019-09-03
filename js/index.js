@@ -6,7 +6,9 @@ const button = document.querySelectorAll('.btn');
 const letsGoImg = document.querySelector('.content-section img');
 const advGoImg = document.querySelector('.inverse-content img');
 const foot = document.querySelector('.footer');
+const head = document.querySelector('.main-navigation');
 const destH = document.querySelectorAll('.destination h4');
+const tArea = document.querySelector('.nav input')
 
 foot.addEventListener('dragover', e =>{
     e.preventDefault();
@@ -52,4 +54,17 @@ links.forEach(link => {
     link.addEventListener('focus', (event) => {
         event.target.style.color = "purple";
     })
+});
+
+window.addEventListener('resize', () =>{
+    foot.style.backgroundColor = "grey";
+})
+
+window.addEventListener('scroll', () => {
+    console.log('We are scrolling...');
+    head.style.backgroundColor = "grey";
+})
+
+tArea.addEventListener('select', () =>{
+    alert("Some text has been selected. Find it!!!!");
 })
