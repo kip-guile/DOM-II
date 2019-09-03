@@ -1,5 +1,5 @@
 // Your code goes here
-const links = document.querySelectorAll('a');
+const links = document.querySelectorAll('nav a');
 const introH = document.querySelector('.intro h2')
 const body = document.body;
 const button = document.querySelectorAll('.btn');
@@ -8,7 +8,10 @@ const advGoImg = document.querySelector('.inverse-content img');
 const foot = document.querySelector('.footer');
 const head = document.querySelector('.main-navigation');
 const destH = document.querySelectorAll('.destination h4');
-const tArea = document.querySelector('.nav input')
+const tArea = document.querySelector('.nav input');
+const fLink = document.querySelectorAll('.footer a');
+const dest = document.querySelector('.content-destination');
+const destP = document.querySelector('.content-destination p');
 
 foot.addEventListener('dragover', e =>{
     e.preventDefault();
@@ -76,3 +79,21 @@ tArea.addEventListener('select', () =>{
 head.addEventListener('dblclick', (e) => {
     e.target.style.backgroundColor = "whitesmoke";
 })
+
+// window.addEventListener('load', (e) => {
+//     console.log('page is fully loaded');
+//     alert("LOad Complete");
+//   });
+
+destP.addEventListener('dblclick', (e) => {
+    e.target.style.backgroundColor = "aqua";
+})
+
+dest.addEventListener('dblclick', (e) => {
+    e.target.style.backgroundColor = "red";
+})
+
+destP.addEventListener('dblclick', e => {
+    e.stopPropagation();
+});
+
