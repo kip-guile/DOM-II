@@ -80,10 +80,10 @@ head.addEventListener('dblclick', (e) => {
     e.target.style.backgroundColor = "whitesmoke";
 })
 
-// window.addEventListener('load', (e) => {
-//     console.log('page is fully loaded');
-//     alert("LOad Complete");
-//   });
+window.addEventListener('load', (e) => {
+    console.log('page is fully loaded');
+    alert("LOad Complete");
+  });
 
 destP.addEventListener('dblclick', (e) => {
     e.target.style.backgroundColor = "aqua";
