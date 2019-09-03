@@ -14,6 +14,10 @@ foot.addEventListener('dragover', e =>{
     e.preventDefault();
 })
 
+links[0].addEventListener('click', e =>{
+    e.preventDefault();
+})
+
 destH.forEach(dH => {
     dH.addEventListener('mouseover', () => {
         console.log('I am hovering');
@@ -67,4 +71,8 @@ window.addEventListener('scroll', () => {
 
 tArea.addEventListener('select', () =>{
     alert("Some text has been selected. Find it!!!!");
+})
+
+head.addEventListener('dblclick', (e) => {
+    e.target.style.backgroundColor = "whitesmoke";
 })
