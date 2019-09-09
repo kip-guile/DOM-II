@@ -200,7 +200,7 @@ img {
   }
 }
 .main-navigation .nav-container .nav {
-  width: 350px;
+  width: 480px;
   display: flex;
   justify-content: space-evenly;
 }
